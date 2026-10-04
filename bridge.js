@@ -45,7 +45,7 @@ function playWinChime(){
 }
 $('replayChime').onclick=playWinChime;
 $('submit').onclick=()=>{if(currentTarget>=0&&$('artist').value){const before=wasm_exports.gallery_won();call('gallery_submit',Number($('artist').value));if(!before&&wasm_exports.gallery_won()){if(matchMedia('(prefers-reduced-motion: reduce)').matches)call('gallery_stop_celebration');playWinChime();}}};
-function inspectArt(i){if(i<0||i>=4)return;clearInput();physicalKeys.clear();$('artTitle').textContent=labels[i];$('artFull').src=assetUrl(`assets/art-${i}.png`);$('artDialog').showModal();}
+function inspectArt(i){if(i<0||i>=4)return;clearInput();physicalKeys.clear();$('artTitle').textContent=labels[i];$('artFull').src=assetUrl(`assets/art-${i}.jpg`);$('artDialog').showModal();}
 $('closeDialog').onclick=()=>$('artDialog').close();
 $('artDialog').addEventListener('close',()=>{clearInput();physicalKeys.clear();view.focus();});
 $('reset').onclick=()=>{stopChime();clearInput();physicalKeys.clear();currentTarget=-1;lastSignature='';$('artist').value='';call('gallery_reset');};

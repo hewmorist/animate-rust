@@ -1,0 +1,7 @@
+AI CONTEXT — Gallery Drone runtime
+Repository: hewmorist/animate-rust. Branch: hi-res-images.
+This branch contains only the browser runtime and basic hosting instructions.
+Four painting JPEGs, compiled gallery.wasm, JavaScript bridge and loader, HTML, and victory sound.
+Serve root directly or run node stage-gallery.cjs and serve public/.
+Revision label at bottom right; larger Listen to The Gallery Drone link.
+Read this file when resuming; update after meaningful changes and before handoff. Never include credentials.
